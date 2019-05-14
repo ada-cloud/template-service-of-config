@@ -1,4 +1,4 @@
-const Server = require("ada-cloud-boot");
+const Server = require("ada-cloud-hub/boot");
 const config = require("./config");
 const router = require("./src/router");
 
