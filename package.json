@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node node_modules/ada-cloud-util/build/develop || true",
+    "dev": "DEBUG=ADA* node node_modules/ada-cloud-util/build/develop || true",
     "publish": "node node_modules/ada-cloud-util/build/index.js || true",
     "start": "DEBUG=ADA* node node_modules/ada-cloud-util/build/publish || true"
   },
