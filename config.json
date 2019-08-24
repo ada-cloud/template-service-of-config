@@ -1,0 +1,46 @@
+{
+  "user-db.json": {
+    "host": "62.234.79.129",
+    "user": "root",
+    "port": 3306,
+    "password": "123456",
+    "database": "ada-uc",
+    "charset": "utf8",
+    "waitForConnections": true,
+    "connectionLimit": 10,
+    "queueLimit": 0
+  },
+  "task-db.json": {
+    "host": "62.234.79.129",
+    "user": "root",
+    "port": 3306,
+    "password": "123456",
+    "database": "ada-task",
+    "charset": "utf8",
+    "waitForConnections": true,
+    "connectionLimit": 10,
+    "queueLimit": 0
+  },
+  "achievement-db.json": {
+    "host": "62.234.79.129",
+    "user": "root",
+    "port": 3306,
+    "password": "123456",
+    "database": "ada-achievement",
+    "charset": "utf8",
+    "waitForConnections": true,
+    "connectionLimit": 10,
+    "queueLimit": 0
+  },
+  "actions-db.json": {
+    "host": "62.234.79.129",
+    "user": "root",
+    "port": 3306,
+    "password": "123456",
+    "database": "ada-actions",
+    "charset": "utf8",
+    "waitForConnections": true,
+    "connectionLimit": 10,
+    "queueLimit": 0
+  }
+}

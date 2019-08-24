@@ -13,4 +13,4 @@ class BaseProvider {
     }
 }
 
-module.exports = BaseProvider;
+export default BaseProvider;

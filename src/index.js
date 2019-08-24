@@ -1,5 +1,5 @@
 import Server from "ada-cloud-hub/boot";
-import config from "../config";
+import config from "./config";
 
 let server = new Server();
 server.on('started', () => {

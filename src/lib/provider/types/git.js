@@ -1,7 +1,7 @@
-const BaseProvider = require("./../base");
-const child = require("child_process");
-const { SyncFile, File } = require("ada-util");
-const Path = require("path");
+import BaseProvider from "../base";
+import child from "child_process";
+import { SyncFile, File } from "ada-util";
+import Path from "path";
 
 const util = {
     excute(path, parameters = []) {
@@ -75,6 +75,7 @@ class GitProvider extends BaseProvider {
         } else {
             ps = ps.then(() => gitExcutor.update());
         }
+        return ps;
     }
 
     get(path) {
@@ -89,8 +90,8 @@ class GitProvider extends BaseProvider {
         if (!new SyncFile(target).exist) {
             ps = ps.then(() => this.update());
         }
-        return ps.then(() => new File(Path.resolve(gitExcutor.respoPath, `./${path}`)).read());
+        return ps.then(() => new File(Path.resolve(gitExcutor.respoPath, `./${path}`)).read()).then(content => JSON.parse(content));
     }
 }
 
-module.exports = GitProvider;
+export default GitProvider;
