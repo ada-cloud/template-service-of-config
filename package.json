@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "DEBUG=ADA* node node_modules/ada-cloud-util/build/develop",
+    "g": "node node_modules/ada-cloud-util/bin/cli boost"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ada-cloud/template-service-of-config.git"

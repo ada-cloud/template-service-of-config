@@ -1,5 +1,5 @@
-const Server = require("ada-cloud-hub/boot");
-const config = require("./config");
+import Server from "ada-cloud-hub/boot";
+import config from "../config";
 
 let server = new Server();
 server.on('started', () => {
