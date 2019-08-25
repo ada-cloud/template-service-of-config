@@ -16,6 +16,6 @@ module.exports = {
     connectionLimit: 10,
     queueLimit: 0,
     consumer:['pink'],
-    output: require("path").resolve(__dirname, "./g")
+    output: require("path").resolve(__dirname, "./src")
   }
 };
